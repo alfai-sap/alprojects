@@ -1,0 +1,664 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: inter;
+    background-color:  #e1ebed;
+
+}
+
+.content {
+     margin-top: 100px;
+}
+
+
+.navbar {
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f0f1f1;
+    height: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    list-style:none;
+    width:100vw; 
+}
+
+
+
+.nav ::placeholder{
+      text-indent: 20px;
+}
+
+.nav .search{
+    width:950px; 
+    height: 30px; 
+    border: 1px solid #007bff; 
+    border-right:none; 
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.nav .search-btn{
+    width: 80px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+
+   
+    padding: 10px;
+}
+
+.nav .search-btn:hover{
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.nav .submit{
+    width: 100px; 
+    height:30px; 
+    float: right;
+}
+
+/*left-navbar*/
+
+.left-navbar{
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    width: 400px;
+    background-color: #f0f1f1; 
+}
+
+.left-nav{
+    display:flex;
+    padding: 10px;
+}
+
+.left-nav:hover{
+    background-color: #e1ebed;
+}
+
+.left-nav p{
+    text-decoration: none;
+    align-self: center;
+    margin: 5px;
+    padding: 10px;
+    color: #0056b3;
+}
+
+.left-navbar li a{
+    text-decoration: none;
+}
+
+.username-nav{
+    padding: 20px;
+    text-shadow: 0px 0px 5px #007bff;
+    text-align: center;
+
+    b{
+        color: #007bff;
+    }
+}
+
+/**/
+.logo-navbar{
+    list-style: none;
+    display: flex;
+    height: 80px;
+    position: fixed;
+    z-index: 999;
+    width:200px;
+    background-color: transparent; 
+}
+
+.logo-navbar-in-left{
+    list-style: none;
+    display: flex;
+    height: 80px;
+    width: 400px;
+     
+}
+
+.logo-nav{
+    border: none;
+    font-weight: bolder;
+    font-size: x-large;
+    display:flex;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.logo-left-nav{
+    border: none;
+    font-weight: bolder;
+    display:flex;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.logo-nav p{
+    text-decoration: none;
+    align-self: center;
+    margin: 5px;
+    padding: 12px;
+    color: #0056b3;
+}
+
+.logo-navbar li a{
+    text-decoration: none;
+}
+
+.toggle-icon{
+    padding: 15px;
+    height: 30px;
+    width: 30px;
+   
+}
+
+/**/
+
+
+.login_user_pic{
+    
+    
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius:30px ;    
+}
+
+.icons{
+    padding: 10px;
+    height: 25px;
+    width: 25px;
+   
+}
+
+/*content*/
+.container {
+    height: 100%;
+    width: 1024px;
+    margin: 90px auto 0; /* Add margin-top to accommodate fixed navbar */
+    background-color: #e1ebed;
+    border-radius: 10px;
+}
+
+h1 {
+    padding-top: 125px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+}
+
+h2{
+    padding-top: 100px;
+    color:  #007bff;
+}
+
+.username-nav{
+    color: #0056b3;
+}
+
+.search_results{
+    color: #007bff;
+    padding-top: 30px;   
+    padding-bottom: 20px; 
+}
+
+.post_title{
+    color: #007bff; 
+    text-align:center;
+}
+
+
+p {
+    
+    color: #eee2de;
+}
+
+.welcome{
+    text-align: center;
+}
+
+
+.post-form{
+    height:100%; 
+    width:100%;
+    background-color: #f0f1f1; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post_uname{
+    color: #0056b3;
+    font-weight: bold;
+    text-decoration: none;
+    
+    padding: 10px;
+}
+
+form {
+    margin-top:20px ;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.create-label{
+    padding:20px;
+    color: #0056b3;
+
+}
+
+.post-title-in{
+    width:95%; 
+    margin:20px;
+    margin:20px;
+
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.post-content-in{
+    padding: 10px;
+    margin-bottom: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+
+    height:100%; 
+    width:95%; 
+    margin:20px;
+}
+
+.post-postbtn-in{
+    margin:20px; 
+    width: 95%;
+
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-postbtn-in:hover{
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.post-container{
+    background-color: #e1ebed; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.post {
+    height: 100%;
+    background-color: #f0f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}
+
+
+.post h3 {
+    margin: 0;
+    cursor: pointer; 
+    padding-left:10px; 
+    padding-right:10px; 
+    padding-bottom:20px; 
+    padding-top:20px; 
+    /*background: linear-gradient(to right, #141e46 , #007bff);*/ 
+    color:/*#f0f1f1*/ #007bff;
+}
+
+hr{
+    border: 1px solid #007bff;
+    opacity: 20%;
+}
+
+.comments {
+    height: 100%;
+}
+
+.count_comm{
+    color:#007bff; 
+    text-align:center; 
+    font-size: medium;
+    padding:10px; 
+    opacity:80%;
+}
+
+.comments h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.comments p {
+    margin: 5px 0;  
+}
+
+.post-comments{
+    margin: 5px 0;
+    padding-left: 20px;
+    padding-top:10px; padding-bottom:10px; color:black; opacity:60%; display:none;
+    
+}
+
+
+
+.comment-form{
+    padding:20px; 
+    
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/ 
+    padding-left:10px;
+}
+
+.user-comment {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;   
+
+    
+    width:90%; 
+    height: 50px;
+}
+
+.upload-comment-btn{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    padding: 10px 20px; 
+    
+}
+
+.comm-input{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.upload-comment-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+.post_username{
+    margin-top:10px; 
+    color:black;  
+}
+
+.post_time{
+    font-size: small; 
+    margin-left: 10px; 
+    margin-top:5px; 
+    margin-right:10px; 
+    transition:0.4s ease; 
+    margin-bottom:10px; 
+    color: black; 
+    opacity:50%
+} 
+
+.author_pic{
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+    
+}
+
+.user_post_info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.viewth_label{
+    text-decoration: none;
+}
+
+.viewthread{
+    margin:20px; 
+    width: 95%;
+
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.viewthread:hover{
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.post_content{
+    background-color: none;
+
+    margin-left: 10px; 
+    margin-top:20px; 
+    text-align:justify; 
+    margin-right:10px; 
+    margin-bottom:20px; 
+    color:black; 
+    display:none;
+
+    transition: 0.4s ease;
+}
+
+.pic_user{
+    display: flex;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: transparent;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.dropdown_icon{
+    position: relative;
+    display: inline-block;
+
+    padding-bottom:50px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+
+    padding-bottom:50px;
+    padding-top: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f0f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    p{
+        padding:5px; text-align:center; color:#007bff;
+    }
+
+}
+
+.dropdown-content a {
+    color: #007bff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+    transition: 0.4s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #0056b3;
+    color: #f0f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*para sa like */
+.like-btn {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+
+    transition: 0.4s ease;
+}
+
+/* Style for like count */
+.like-count {
+    opacity: 70%;
+    color: #007bff;
+
+}
+
+/* Style for like section */
+.lik{
+    display: flex;
+    align-items: center;
+}
+
+.bulb:hover{
+    height: 30px;
+    width: 30px;
+}
+
+.bulb{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    transition: 0.4s ease;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+.logo-nav{
+        font-size: large;
+        padding: 5px;
+    }
+    
+.logo-left-nav{
+        padding: 5px;
+        font-size: large;
+    }
+
+.nav .search{
+    height: 30px;
+    width: 100%;
+}
+
+.container {
+    width: 90%; /* Adjust container width for smaller screens */
+}
+
+.navbar {
+    height: 10%;
+    justify-content: center;
+    
+    /* Center align navbar items for smaller screens */
+}
+
+.search{
+        width: 100%;
+        justify-self: right;
+    }
+
+.navbar li {
+    margin: 10px; /* Reduce margin for navbar items */
+}
+
+.nav{
+    padding-left: 100px;
+}
+.navbar2{
+    justify-content: center;
+}
+
+.navbar2 li{
+    margin: 10px;
+}
+.search {
+    padding-left: 0px;
+    width: 100%; /* Adjust search input width for smaller screens */
+}
+
+.post-form {
+    width: 90%;
+    padding: 20px; /* Adjust padding for post form */
+}
+
+.post-container {
+    padding: 10px; /* Adjust padding for post containers */
+    margin-top: 100px;
+}
+
+.comments {
+    padding: 10px; /* Adjust padding for comments */
+}
+
+.comments h4 {
+    padding: 10px; /* Adjust padding for comment headers */
+}
+
+.comments p {
+    margin: 5px 0; /* Adjust margin for comments */
+}
+
+.welcome_container {
+    padding: 40px; /* Adjust padding for welcome container */
+}
+
+}
